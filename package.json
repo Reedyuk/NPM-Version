@@ -1,0 +1,23 @@
+{
+  "name": "NPM-Version",
+  "version": "1.0.0",
+  "description": "NPM-Version allows you to change the version of your projects package.json file in a simple GitHub action.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Reedyuk/NPM-Version.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Reedyuk/NPM-Version/issues"
+  },
+  "homepage": "https://github.com/Reedyuk/NPM-Version#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.4"
+  }
+}

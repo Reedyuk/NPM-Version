@@ -1,0 +1,13 @@
+name: run npm-version pipeline
+on: push
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@master
+
+      - name: 'run version change'
+        uses: ./
+        with:
+          version: '1.0.1'

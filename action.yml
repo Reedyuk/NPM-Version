@@ -1,0 +1,15 @@
+name: "NPM-Version"
+description: "Change the version of your projects package.json file in a simple GitHub action."
+
+inputs:
+  version:
+    description: "This will be the version you want to set in the package.json file"
+    required: true
+  package:
+    description: "The full location of the package.json file, defaults to package.json"
+    default: "package.json"
+    required: true
+
+runs:
+  using: "node12"
+  main: "index.js"

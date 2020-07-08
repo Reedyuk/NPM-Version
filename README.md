@@ -21,12 +21,12 @@ Make sure that you have
 The command `npm version` is ran with the parameters specified, this in turn will change the version stored in the package.json
 
 
-## How to use the Codefresh GitHub action
+## How to use the NPM-Version GitHub action
 
 An example of workflow
 
 ```
-name: run codefresh pipeline
+name: run npm-version pipeline
 on: push
 jobs:
   build:
