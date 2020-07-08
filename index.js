@@ -7,12 +7,10 @@ async function run() {
 
     const child = exec("npm version " + version + " --no-git-tag-version", (error, stdout, stderr) => {
         if(error != null) {
-            console.log("here?1");
             core.setFailed(error);
         }
         if(stderr != null) {
-            console.log("here?");
-            core.setFailed(stderr);
+            console.log(stderr);
         }
         console.log(stdout);
     });
