@@ -8,7 +8,7 @@ jobs:
         uses: actions/checkout@master
 
       - name: Current Version Checkout
-        run: npm -v
+        run: npm run version
 
       - name: 'run version change'
         uses: ./
@@ -16,4 +16,4 @@ jobs:
           version: '1.0.1'
 
       - name: Current Version Checkout
-        run: npm -v
+        run: npm run version
