@@ -8,6 +8,6 @@ jobs:
         uses: actions/checkout@master
 
       - name: 'run version change'
-        uses: ./dist/
+        uses: ./
         with:
           version: '1.0.1'
