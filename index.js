@@ -3,9 +3,9 @@ const exec = require('child_process').exec;
 
 async function run() {
     const version = core.getInput("version");
-    const package = core.getInput("package");
+    const package = core.getInput("package").replace("package.json", "");
 
-    const child = exec("npm version " + version + " --no-git-tag-version", (error, stdout, stderr) => {
+    const child = exec("npm version " + version + " --prefix " + package + " --no-git-tag-version", (error, stdout, stderr) => {
         if(error != null) {
             core.setFailed(error);
         }

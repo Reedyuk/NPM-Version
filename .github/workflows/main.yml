@@ -13,7 +13,7 @@ jobs:
       - name: 'run version change'
         uses: ./
         with:
-          version: '1.0.1'
+          version: '10.1.1'
 
       - name: Current Version Checkout
         run: npm run version

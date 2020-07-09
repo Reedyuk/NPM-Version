@@ -6,8 +6,8 @@ inputs:
     description: "This will be the version you want to set in the package.json file"
     required: true
   package:
-    description: "The full location of the package.json file, defaults to package.json"
-    default: "package.json"
+    description: "The location of the package.json file, defaults to current directory."
+    default: "./"
     required: true
 
 runs:

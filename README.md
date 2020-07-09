@@ -39,11 +39,11 @@ jobs:
         uses: reedyuk/npm-version@vlatest
         with:
           version: '1.0.1'
-          package: 'package.json'
+          package: 'subproject-directory/'
 ```
 
 ### Variables
 
 * version: The version you want to change your package json to.
-* package(optional): defaults to package.json, but you can specify a locaion otherwise.
+* package(optional): defaults to current directory, but you can specify a locaion otherwise.
 
