@@ -6,7 +6,7 @@ async function run() {
     const gitTagVersion = core.getInput("git-tag-version");
     const package = core.getInput("package").replace("package.json", "");
 
-    core.debug("value of git-tag-version "+gitTagVersion);
+    console.log("value of git-tag-version "+gitTagVersion);
 
     const child = exec("npm version " + version + " --prefix " + package + " " + (!gitTagVersion ? "--no-git-tag-version" : ""), (error, stdout, stderr) => {
         if(error != null) {
