@@ -9,6 +9,10 @@ inputs:
     description: "The location of the package.json file, defaults to current directory."
     default: "./"
     required: true
+  git-tag-version:
+    description: "If set to true, the version will be tagged and committed. Same behaviour as git-tag-version"
+    default: false
+    required: false
 
 runs:
   using: "node12"

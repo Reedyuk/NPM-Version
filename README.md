@@ -36,7 +36,7 @@ jobs:
         uses: actions/checkout@master
         
       - name: 'change version'
-        uses: reedyuk/npm-version@1.0.2
+        uses: reedyuk/npm-version@1.1.0
         with:
           version: '1.0.1'
           package: 'subproject-directory/'
@@ -46,4 +46,5 @@ jobs:
 
 * version: The version you want to change your package json to.
 * package(optional): defaults to current directory, but you can specify a locaion otherwise.
+* git-tag-version(optional): defaults to false, if true, it will tag and commit the version - the same behaviour as git-tag-version in npm.
 
