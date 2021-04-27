@@ -3,7 +3,7 @@ const exec = require('child_process').exec;
 
 async function run() {
     const version = core.getInput("version");
-    const gitTagVersion = core.getInput("git-tag-version").toUpper() === 'true';
+    const gitTagVersion = core.getInput("git-tag-version").toLowerCase() === 'true';
     const package = core.getInput("package").replace("package.json", "");
 
     const child = exec("npm version " + version + " --prefix " + package + " " + (!gitTagVersion ? "--no-git-tag-version" : ""), (error, stdout, stderr) => {

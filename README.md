@@ -36,7 +36,7 @@ jobs:
         uses: actions/checkout@master
         
       - name: 'change version'
-        uses: reedyuk/npm-version@1.1.0
+        uses: reedyuk/npm-version@1.1.1
         with:
           version: '1.0.1'
           package: 'subproject-directory/'
