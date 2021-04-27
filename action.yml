@@ -11,7 +11,7 @@ inputs:
     required: true
   git-tag-version:
     description: "If set to true, the version will be tagged and committed. Same behaviour as git-tag-version"
-    default: "false"
+    default: false
     required: false
 
 runs:
