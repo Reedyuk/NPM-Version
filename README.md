@@ -49,3 +49,7 @@ jobs:
 * package(optional): defaults to current directory, but you can specify a locaion otherwise.
 * git-tag-version(optional): defaults to false, if true, it will tag and commit the version - the same behaviour as git-tag-version in npm.
 
+### Notes
+
+If using git-tag-version, it is recommended you do something as mentioned in this blog post. https://wildwolf.name/github-actions-how-to-avoid-running-the-same-workflow-multiple-times/
+
