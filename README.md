@@ -40,6 +40,7 @@ jobs:
         with:
           version: '1.0.1'
           package: 'subproject-directory/'
+          git-tag-version: 'true'
 ```
 
 ### Variables
