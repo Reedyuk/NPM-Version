@@ -46,7 +46,7 @@ jobs:
 ### Variables
 
 * version: The version you want to change your package json to.
-* package(optional): defaults to current directory, but you can specify a locaion otherwise.
+* package(optional): defaults to current directory, but you can specify a location otherwise.
 * git-tag-version(optional): defaults to false, if true, it will tag and commit the version - the same behaviour as git-tag-version in npm.
 
 ### Notes
