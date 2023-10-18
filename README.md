@@ -1,3 +1,5 @@
+![Count of Action Users](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/Reedyuk/NPM-Version/master/NPM-Version.json)
+
 # NPM-Version GitHub Action  
 
 NPM-Version allows you to change the version of your projects package.json file in a simple GitHub action.
